@@ -1,0 +1,20 @@
+Grupo 4(D)
+Uma aplicação integrada com maps e/ou gps, onde podemos cadastrar listas de compras diversas:
+
+Exemplos:
+Alimentos
+
+Medicamentos
+
+Peças para o carro
+
+Combustível
+
+
+
+Conforme estivermos perto de locais que contenham os itens das nossas listas seremos notificados para lembrar
+de adquirir aqueles itens.
+
+
+
+Se não for possível a integração poderíamos simular a localização setando ela manualmente.
