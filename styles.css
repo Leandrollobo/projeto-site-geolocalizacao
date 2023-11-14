@@ -1,0 +1,30 @@
+img {
+    margin: 30px 30px 30px 400px;
+}
+
+h1 {
+    background-color: rgb(165, 254, 245);
+    margin: 2px 50px 50px 100px;
+}
+
+label {
+    margin: 50px 2px 50px 100px;
+}
+
+iframe {
+    margin: 2px 2px 50px 200px;
+}
+
+h2 {
+    margin: 30px 30px 30px 400px;
+    background-color: rgb(165, 254, 245);
+}
+
+li {
+    margin: 30px 30px 30px 400px;
+}
+
+body {
+    background-color: rgb(170, 206, 205)
+
+}
