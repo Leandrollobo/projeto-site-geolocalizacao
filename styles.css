@@ -1,9 +1,9 @@
 img {
-    margin: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 150px;
 }
 
 h1 {
-    background-color: rgb(165, 254, 245);
+    background-color: rgb(61, 246, 228);
     margin: 2px 50px 50px 100px;
 }
 
@@ -25,6 +25,6 @@ li {
 }
 
 body {
-    background-color: 
+    background-color: rgb(170, 206, 205)
 
 }
