@@ -1,5 +1,5 @@
 img {
-    margin: 0px 0px 0px 150px;
+    margin: 0px 0px 0px 0px;
 }
 
 h1 {
@@ -22,9 +22,4 @@ h2 {
 
 li {
     margin: 30px 30px 30px 400px;
-}
-
-body {
-    background-color: rgb(170, 206, 205)
-
 }
