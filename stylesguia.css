@@ -1,4 +1,10 @@
-* {
+header {
   margin: 0;
+  padding: 0;
+  background-color: blue;
+  color: blueviolet;
+}
 
+h1 {
+  color: red;
 }
