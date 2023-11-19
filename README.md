@@ -1,4 +1,4 @@
-# Projeto: Introdução à Programação - Turma 17 (Front-end)
+# Projeto Integrador: Introdução à Programação - Turma 17 (Front-end)
 
 ## Parceria
 Proz Tecnologia, AWS, Portal Tech, Meta
