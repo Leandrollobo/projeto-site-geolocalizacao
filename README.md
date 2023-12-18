@@ -25,7 +25,7 @@ A proposta é permitir que usuários cadastrem listas de compras variadas, como 
    - Espaço para avaliações e comentários dos usuários.
 
 ## Repositório no GitHub
-[Link para o Repositório](https://github.com/seu-usuario/nome-do-repositorio](https://github.com/Leandrollobo/sprints-proz)
+[Link para o Repositório](https://github.com/Leandrollobo/sprints-proz)]
 
 ## Atualizações Semanais
 O projeto receberá atualizações e novos arquivos semanalmente. Acompanhe as contribuições e melhorias no repositório.
