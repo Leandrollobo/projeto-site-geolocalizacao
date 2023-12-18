@@ -139,6 +139,23 @@ footer {
 
 }
 
+#social-links {
+  display: flex;
+  justify-content: center;
+  padding: 24px 0;
+  font-size: 24px;
+}
+
+#social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  transition: background 0.2s;
+  border-radius: 50%;
+}
+
+
 
 /*Paleta Cores para elementos
 /*1-hex { color: #008744; }
