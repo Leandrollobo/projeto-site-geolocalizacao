@@ -10,7 +10,7 @@
   /*border: 3px solid green;*/
   background-image: linear-gradient(-45deg, #173F73, #153259, #152840, #0D0D0D);
   background-attachment: fixed;
-  padding-bottom: 20px; /*adiciona um padding na div de background para que o quadro branco fique flutuante sem enconsta na borda da tela
+  padding-bottom: 20px; /*adiciona um padding na div de background para que o quadro branco fique flutuante sem enconsta na borda da tela*/
 }
 
 /* Remove a linha abaixo de hiperlnks e define a cor padrão para os links*/
@@ -52,7 +52,6 @@ header {
  margin-top: 10px;
  margin-left: 100px;
  margin-right: 100px;
-
 }
 
 main {
@@ -158,8 +157,6 @@ footer {
   transition: background 0.2s;
   border-radius: 50%;
 }
-
-
 
 /*Paleta Cores para elementos
 /*1-hex { color: #008744; }
