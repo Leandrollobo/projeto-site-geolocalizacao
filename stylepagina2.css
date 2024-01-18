@@ -5,6 +5,7 @@
 }
 
 nav {
+  /*border: 10px solid red;*/
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,6 +27,7 @@ nav {
 .fundo {
   background-image: linear-gradient(-45deg, #173f73, #153259, #152840, #0d0d0d);
   background-attachment: fixed;
+  padding-bottom: 20px;
 }
 
 main {
@@ -41,6 +43,7 @@ main {
 h1 {
   color: #172b4d;
   margin-left: 100px;
+  padding-top: 20px;
 }
 
 .sessao-1 {
@@ -54,9 +57,9 @@ h1 {
 }
 
 header {
-  margin-top: 10px;
   margin-left: 100px;
   margin-right: 100px;
+  padding-top: 100px;
 }
 
 /* codigo nao usavel
