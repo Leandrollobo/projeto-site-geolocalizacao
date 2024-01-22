@@ -8,8 +8,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;900&family=Raleway&family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;900&family=Raleway:wght@400;700&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;900&family=Raleway:wght@400;700&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
     <!-- Links do arquivo css -->
     <link rel="stylesheet" href="styles.css">
     <title>Na Rota</title>
@@ -19,7 +20,7 @@
       <header>
         <nav>
           <div class="imagemmenu">
-          <img src="assets/logo-transparente.png"/>
+          <img src="img/logo-transparente.png"/>
           </div>
           <ul class="menunav">
             <li><a href="pagina2.html">Cadastro</a></li>
@@ -29,20 +30,20 @@
           </ul>
         </nav>
     </header>
-
+        <div>
+          <h1>O site que avisa das suas listas de compras!</h1>
+        </div>
         <form class="form" action="">
           <div class="card">
-            <label>Email</label>
-            <input type="text" name="email" placeholder="Digite seu email">
-            <label>senha</label>
-            <input type="password" name="senha" placeholder="Digite sua senha">
-            <button type="submit">ACESSAR</button>
-            <!-- div não utilizada -->
-            <!--<div class="submit2"> -->
-            <!--a tag html <button2> não é um elemento HTML-->
-            <!--<button2 type="submit2">INSCREVA-SE</button2></div>-->
-            <!--abaixo correto-->
-            <button type="submit" class="submit2">INSCREVA-SE</button>
+            <label for="email">E-mail:</label>
+            <input type="text" id="email" name="email" placeholder="Digite seu email">
+            <p id="email-helper" class="helper-text"></p>
+            <label for="senha">senha</label>
+            <input type="password" id="senha" name="senha" placeholder="Digite sua senha">
+            <p id="senha-helper" class="helper-text"></p>
+            <button type ="submit">ACESSAR</button>
+            <div class="submit2">
+            <button2 type="submit2">INSCREVA-SE</button2></div>
           </div>
         </form>
 
@@ -55,9 +56,7 @@
         title="YouTube video player"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media;
-        gyroscope; picture-in-picture; web-share"
-        allowfullscreen
-        ></iframe>
+        gyroscope; picture-in-picture; web-share"allowfullscreen></iframe>
       </section>
     </main>
 

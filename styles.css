@@ -4,24 +4,12 @@
   padding: 0;
   box-sizing: border-box;
 }
-/*
-ul {
-    list-style: none;
-    display: flex;
-    padding-top: 50px;
-    font-weight: bold;
-}*/
-
-/*
-li {
-    margin: 0 15px;
-}*/
 
 nav {
   display: flex;
   justify-content: center;
   background-color: #ffff;
-  padding: 60px;
+  padding: 20px;
   height: 60px;
   border-radius: 10px 10px 0px 0px;
 }
@@ -35,20 +23,23 @@ body {
 
 .imagemmenu {
   display: flex;
-  margin-right: 500px;
-
-  width: 180px;
-  height: 130px;
+  margin-right: 808px;
+  width: 200px;
+  height: 150px;
+  background-color: #ffff;
 }
 
 .video {
   padding: 50px;
   background-color: white;
-  /*margin-left: 00px;*********************/
-  /*margin-bottom: 0px;*********************/
+  margin-left: 400px;
+}
+.form {
+  width: 400px;
 }
 
 .menunav {
+  margin-top: 100px;
   display: flex;
   align-items: center;
   list-style: none;
@@ -57,60 +48,70 @@ body {
 }
 
 .card {
-  /*o tamanho do card já é definido na estilização da main*/
-  /*width: 100%;*/
-  float: right;
+  width: 120%;
+  height: 588px;
+  float: left;
   background-color: white;
-  padding: 20px;
+  padding: 10px;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  /*flex-direction: column;*/
-  /*align-items: flex-start;*/
-  /*margin-top: 00px;
-  margin-bottom: 00px;****** Para dar um espaçamento dentro da caixa para ter um fundo branco maior ficou melhor usando padding*/
-  /*box-shadow: 1px 1px 5px #ccc;*/
+  margin-bottom: 30px;
 }
 
 button {
-  align-items: center;
   background-color: #a81313;
+  box-shadow: 1px 1px 5px #ccc;
   width: 70%;
   height: 40px;
   border-radius: 20px;
   color: #ccc;
   border: 0px;
   outline: 0;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
-/*
+
 label {
   margin-top: 20px;
   width: 170%;
   color: rgb(75, 75, 75);
   display: block;
-}*/
+}
 
 .submit2 {
   background-color: #9a7519;
+  box-shadow: 1px 1px 5px #ccc;
+  width: 70%;
+  height: 40px;
+  border-radius: 20px;
+  color: #ccc;
+  border: 0px;
+  outline: 0;
+  margin-top: 10px;
+  text-align: center;
+  font-size: small;
+  font-family: "Raleway", sans-serif;
 }
 
 input {
   border-radius: 5px;
   outline: 0;
-  width: 100%;
+  width: 70%;
   height: 30px;
-  align-items: center;
+  padding: 5px;
+  margin-bottom: 30px;
+  margin-top: 30px;
 }
 
-header {
-}
-
-/*
 h1 {
-    font-size: 2.5rem;
-    padding: 30px;
-    font-weight: bold;
-    color: #ffff;
-}*/
+  background-color: #ffff;
+  text-align: center;
+  font-size: 3.5rem;
+  padding-top: 160px;
+  font-weight: bold;
+  color: #172b4d;
+}
 
 main {
   margin-left: 100px;
@@ -122,10 +123,9 @@ a {
   text-decoration: none;
 }
 
-/*
-div {
-    margin-bottom: 20px;
-    }*/
+label {
+  color: #172b4d;
+}
 
 .linhacinza {
   background-color: rgba(128, 128, 128, 0.5);
@@ -133,9 +133,10 @@ div {
 }
 
 h2 {
-  font-size: smaller;
+  font-size: 1.2rem;
   margin-top: 20px;
   margin-bottom: 20px;
+  color: #172b4d;
 }
 
 #social-links {
@@ -144,6 +145,7 @@ h2 {
   padding: 24px 0;
   font-size: 24px;
 }
+
 #social-links a {
   display: flex;
   align-items: center;
@@ -161,4 +163,33 @@ footer {
   text-align: center;
   font-size: 14px;
   background-color: #ffff;
+  padding: 50px;
+}
+.required-popup::after {
+  content: "*Campo obrigatório";
+  position: inherit;
+  color: #ffffff;
+  font-size: 0.65rem;
+  padding: 0.2rem 0.3rem;
+  width: auto;
+  display: block;
+  background-color: #202020;
+  border-radius: 20px;
+  width: 100px;
+}
+
+input.error {
+  border: solid 2px #992020;
+  background-color: #ccbbbb;
+  color: #662020;
+}
+
+input.correct {
+  background-color: #bbccbb;
+  border: solid 2px #206620;
+  color: #206620;
+}
+
+.visible {
+  display: none;
 }
