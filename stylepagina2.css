@@ -5,6 +5,7 @@
 }
 
 nav {
+  /*border: 10px solid red;*/
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,21 +27,23 @@ nav {
 .fundo {
   background-image: linear-gradient(-45deg, #173f73, #153259, #152840, #0d0d0d);
   background-attachment: fixed;
+  padding-bottom: 20px;
 }
 
 main {
   margin-left: 100px;
   margin-right: 100px;
 }
+
 .cadastro {
-  /*
-  border: 5px solid red;*/
+  /*border: 5px solid red;*/
   background-color: white;
 }
 
 h1 {
   color: #172b4d;
   margin-left: 100px;
+  padding-top: 20px;
 }
 
 .sessao-1 {
@@ -49,26 +52,54 @@ h1 {
   align-items: center;
   margin-bottom: 0px;
   flex-wrap: wrap;
-  padding: 100px;
+  padding: 50px;
+  box-sizing: border-box;
+  justify-content: center;
+}
+
+form {
+  width: 100%;
   box-sizing: border-box;
 }
 
-header {
-  margin-top: 10px;
-  margin-left: 100px;
-  margin-right: 100px;
+form div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
 }
 
-/* codigo nao usavel
-  ul {
-      display: flex;
-    justify-content: space-between;
-    list-style: none;
-    align-items: center;
-    gap: 30px;
-    padding: 30px;
-  }
-  */
+form label {
+  margin-bottom: 5px;
+  margin-left: 5px;
+}
+
+form input {
+  align-self: left;
+  outline: unset;
+  padding: 10px;
+  border: 1px solid #173f73;
+  border-radius: 20px;
+  width: 100%;
+}
+
+form input:focus {
+  background-color: #8fa6a1;
+}
+
+button {
+  background-color: #173f73;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 10px;
+  border: 1px solid #173f73;
+  border-radius: 20px;
+}
+
+header {
+  margin-left: 100px;
+  margin-right: 100px;
+  padding-top: 100px;
+}
 
 .footer-margin {
   padding: 5px;
@@ -95,4 +126,34 @@ footer {
   padding: 16px;
   transition: background 0.2s;
   border-radius: 50%;
+}
+
+/*estilização do form*/
+.required-popup::after {
+  content: "*Campo obrigatório";
+  position: inherit;
+  color: #ffffff;
+  font-size: 0.65rem;
+  padding: 0.2rem 0.3rem;
+  width: auto;
+  display: block;
+  background-color: #202020;
+  border-radius: 20px;
+  width: 100px;
+}
+
+input.error {
+  border: solid 2px #992020;
+  background-color: #ccbbbb;
+  color: #662020;
+}
+
+input.correct {
+  background-color: #bbccbb;
+  border: solid 2px #206620;
+  color: #206620;
+}
+
+.visible {
+  display: none;
 }

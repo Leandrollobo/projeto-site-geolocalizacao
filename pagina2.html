@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro Usuário</title>
     <link rel="stylesheet" href="/stylepagina2.css">
+    <script src="pagina2.js" defer></script>
 </head>
 
 <body>
@@ -14,76 +15,113 @@
         <img src="./assets/logo-transparente.png"
         width="150px", height="100"/>
         <ul class="navegacao">
-          <li> <a href="">Página Inicial</a></li>
-          <li> <a href="">Página de Cadastro</a></li>
-          <li> <a href="">Página de Usuário e interações</a></li>
-          <li> <a href="">Tutorial</a></li>
-          <li> <a href=""> Feedback </a></li>
+          <li> <a href="index.html">Inicio</a></li>
+          <li> <a href="pagina2.html">Cadastro</a></li>
+          <li> <a href="pagina3/optionlists.html">Listas</a></li>
+          <li> <a href="guia.html">Recursos</a></li>
+          <li> <a href="avaliacoes.html">Avaliações</a></li>
         </ul>
       </nav>
-        </header>
+    </header>
 
-        <main>
+    <main>
+      <div class="cadastro">
+       <h1>Cadastro:</h1>
+      </div>
 
-
-
-
-        <div class="cadastro">
-    <h1>Cadastro:</h1>
-
-        </div>
 
     <div class="sessao-1">
-    <form action="">
 
+      <form action="">
+        <div>
         <label for="nome">Nome:</label>
-        <input type="text"id="nome">
+        <input type="text" id="nome">
+        <p id="nome-helper" class="helper-text"></p>
+        </div>
 
+        <div>
         <label for="email">Email:</label>
-        <input type="email"id="email">
+        <input type="email" id="email">
+        <p id="email-helper" class="helper-text"></p>
+        </div>
 
+        <div>
+          <label for="idade">Idade:</label>
+          <input type="text"id="idade">
+          <p id="idade-helper" class="helper-text"></p>
+        </div>
 
-        <label for="telefone">Telefone:</label>
-        <input type="tel"id="telefone">
+        <div>
+          <label for="username">Username</label>
+          <input type="text" id="username">
+          <p id="username-helper" class="helper-text"></p>
+        </div>
 
+        <div>
         <label for="senha">Senha</label>
-        <input type="password" id="password">
+        <input type="password" id="senha">
+        <p id="senha-helper" class="helper-text"></p>
+        </div>
+
+        <div>
+        <label for="csenha">Confirmar senha</label>
+        <input type="password" id="csenha">
+        <p id="csenha-helper" class="helper-text"></p>
+        </div>
 
 
-          <p> Endereço: </p>
+
+        <div>
+        <p> Endereço: </p>
+        </div>
 
 
-
+        <div>
         <label for="logradouro">Logradouro:</label>
         <input type="text"id="logradouro">
+        <p id="logradouro-helper" class="helper-text"></p>
+        </div>
 
-        <label for="número">Número:</label>
-        <input type="number"id="number">
+        <div>
+        <label for="numero">Número:</label>
+        <input type="text"id="numero">
+        <p id="numero-helper" class="helper-text"></p>
+        </div>
 
+        <div>
         <label for="complemento">Complemento:</label>
         <input type="text"id="complemento">
+        <p id="complemento-helper" class="helper-text"></p>
+        </div>
 
-
-
+        <div>
         <label for="cep">Cep:</label>
         <input type="text"id="cep">
+        <p id="cep-helper" class="helper-text"></p>
+        </div>
 
-
-        <label for="bairro">Bairro:</label>
-        <input type="text"id="bairro">
-
+        <div>
         <label for="cidade">Cidade:</label>
         <input type="text"id="cidade">
+        <p id="cidade-helper" class="helper-text"></p>
+        </div>
 
-
+        <div>
         <label for="estado">Estado:</label>
-        <input type="text"id="Estado"> <br>
-        <br>
+        <input type="text"id="estado">
+        <p id="estado-helper" class="helper-text"></p>
+        </div>
 
+
+
+        <div>
         <button type="submit">Enviar</button>
+        </div>
 
-    </form>
+      </form>
+
     </div>
+
 
         </main>
 
