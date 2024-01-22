@@ -1,4 +1,5 @@
 //INICIO API IBGE//
+//Acesso: https://servicodados.ibge.gov.br/api/docs/localidades//
 const apiIBGE =
   "https://servicodados.ibge.gov.br/api/v1/localidades/municipios";
 const cidadesBrasileiras = [];
@@ -15,8 +16,8 @@ fetch(apiIBGE)
 // Aguarde algum tempo para a resposta da API e, em seguida, utilize o array cidadesBrasileiras
 setTimeout(() => {
   console.log(cidadesBrasileiras);
-}, 3000); // Ajuste este tempo conforme necessário
-//FIM API IBGE//
+}, 3000); // Ajuste este tempo conforme necessário 3seg.
+//FIM API IBGE/
 
 //Array com todos os estados brasileiros//
 const estadosBrasileiros = [
@@ -127,7 +128,7 @@ togglePopup(idadeInput, idadeLabel);
 // Validar valor do input //
 idadeInput.addEventListener("change", (e) => {
   let valor = e.target.value;
-
+  //este if testa e aceita apenas a inserção de números.
   if (/^\d+$/.test(valor) && valor >= 18 && valor <= 90) {
     // Adicionar estilos dinamicos se o valor estiver correto
     estilizarInputCorreto(idadeInput, idadeHelper);
@@ -141,9 +142,8 @@ idadeInput.addEventListener("change", (e) => {
 let usernameInput = document.getElementById("username");
 let usernameLabel = document.querySelector('label[for="username"]');
 let usernameHelper = document.getElementById("username-helper");
-// Validar nome //
-//chama a função de mostrar o pop-up campo obrigatorio
 
+//chama a função de mostrar o pop-up campo obrigatorio
 togglePopup(usernameInput, usernameLabel);
 
 // Validar valor do input
@@ -211,8 +211,6 @@ confirmasenhaInput.addEventListener("blur", (e) => {
 let logradouroInput = document.getElementById("logradouro");
 let logradouroLabel = document.querySelector('label[for="logradouro"]');
 let logradouroHelper = document.getElementById("logradouro-helper");
-// Validar nome //
-//chama a função de mostrar o pop-up campo obrigatorio
 
 // Validar valor do input
 logradouroInput.addEventListener("change", (e) => {
@@ -241,6 +239,7 @@ numeroInput.addEventListener("change", (e) => {
     //console.log("Campo vazio");
     numeroHelper.innerText = "Insira o número do seu endereço";
     estilizarInputIncorreto(numeroInput, numeroHelper);
+    //este if testa a negação caso o usuario não digite numeros
   } else if (!/^\d+$/.test(valor)) {
     //console.log("inseriu letras");
     numeroHelper.innerText = "Digite apenas números";
@@ -255,7 +254,6 @@ numeroInput.addEventListener("change", (e) => {
 let complementoInput = document.getElementById("complemento");
 let complementoLabel = document.querySelector('label[for="complemento"]');
 let complementoHelper = document.getElementById("complemento-helper");
-//chama a função de mostrar o pop-up campo obrigatorio
 
 // Validar valor do input
 complementoInput.addEventListener("change", (e) => {
@@ -299,7 +297,6 @@ cepInput.addEventListener("change", (e) => {
 let cidadeInput = document.getElementById("cidade");
 let cidadeLabel = document.querySelector('label[for="cidade"]');
 let cidadeHelper = document.getElementById("cidade-helper");
-//chama a função de mostrar o pop-up campo obrigatorio
 
 // Validar valor do input
 cidadeInput.addEventListener("change", (e) => {
