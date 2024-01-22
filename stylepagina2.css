@@ -101,17 +101,6 @@ header {
   padding-top: 100px;
 }
 
-/* codigo nao usavel
-  ul {
-      display: flex;
-    justify-content: space-between;
-    list-style: none;
-    align-items: center;
-    gap: 30px;
-    padding: 30px;
-  }
-  */
-
 .footer-margin {
   padding: 5px;
   background-color: rgba(128, 128, 128, 0.5);
