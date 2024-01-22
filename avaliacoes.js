@@ -1,25 +1,23 @@
 let nomeInput = document.getElementById("nome");
 let nomeLabel = document.querySelector('label[for="nome"]');
 
-//mostra pop-up
-nomeInput.addEventListener("focus", function () {
-  nomeLabel.classList.add("required-popup");
-});
-
-//ocultar pop-up de campo obrigatorio
-nomeInput.addEventListener("blur", function () {
-  nomeLabel.classList.remove("required-popup");
-});
+//chama a função de mostrar o pop-up campo obrigatorio
+togglePopup(nomeInput, nomeLabel);
 
 let textArea = document.getElementById("avaliacao");
 let avaliacaoLabel = document.querySelector('label[for="avaliacao"]');
 
-//mostra pop-up
-textArea.addEventListener("focus", function () {
-  avaliacaoLabel.classList.add("required-popup");
-});
+//chama a função de mostrar o pop-up campo obrigatorio
+togglePopup(textArea, avaliacaoLabel);
 
-//ocultar pop-up de campo obrigatorio
-textArea.addEventListener("blur", function () {
-  avaliacaoLabel.classList.remove("required-popup");
-});
+function togglePopup(input, label) {
+  // Mostrar popup de campo obrigatório
+  input.addEventListener("focus", () => {
+    label.classList.add("required-popup");
+  });
+
+  // Ocultar popup de campo obrigatório
+  input.addEventListener("blur", () => {
+    label.classList.remove("required-popup");
+  });
+}
