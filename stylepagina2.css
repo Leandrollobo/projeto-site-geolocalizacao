@@ -34,9 +34,9 @@ main {
   margin-left: 100px;
   margin-right: 100px;
 }
+
 .cadastro {
-  /*
-  border: 5px solid red;*/
+  /*border: 5px solid red;*/
   background-color: white;
 }
 
@@ -52,8 +52,47 @@ h1 {
   align-items: center;
   margin-bottom: 0px;
   flex-wrap: wrap;
-  padding: 100px;
+  padding: 50px;
   box-sizing: border-box;
+  justify-content: center;
+}
+
+form {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+form label {
+  margin-bottom: 5px;
+  margin-left: 5px;
+}
+
+form input {
+  align-self: left;
+  outline: unset;
+  padding: 10px;
+  border: 1px solid #173f73;
+  border-radius: 20px;
+  width: 100%;
+}
+
+form input:focus {
+  background-color: #8fa6a1;
+}
+
+button {
+  background-color: #173f73;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 10px;
+  border: 1px solid #173f73;
+  border-radius: 20px;
 }
 
 header {
@@ -98,4 +137,34 @@ footer {
   padding: 16px;
   transition: background 0.2s;
   border-radius: 50%;
+}
+
+/*estilização do form*/
+.required-popup::after {
+  content: "*Campo obrigatório";
+  position: inherit;
+  color: #ffffff;
+  font-size: 0.65rem;
+  padding: 0.2rem 0.3rem;
+  width: auto;
+  display: block;
+  background-color: #202020;
+  border-radius: 20px;
+  width: 100px;
+}
+
+input.error {
+  border: solid 2px #992020;
+  background-color: #ccbbbb;
+  color: #662020;
+}
+
+input.correct {
+  background-color: #bbccbb;
+  border: solid 2px #206620;
+  color: #206620;
+}
+
+.visible {
+  display: none;
 }
