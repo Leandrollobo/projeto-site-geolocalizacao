@@ -65,7 +65,6 @@ h1 {
 }
 
 .titulo-principal {
-  /*border: 1px solid green;*/
   padding: 20px;
   margin-left: 100px;
   width: 600px;
@@ -80,7 +79,6 @@ h1 {
 }
 
 .h2caption {
-  /*border: 1px solid red;*/
   color: #ffffff;
   padding: 100px;
   width: 600px;
@@ -122,8 +120,6 @@ footer {
   margin-right: 100px;
   border-radius: 0px 0px 10px 10px;
   background: #ffffff;
-
-
 }
 
 .footer-menu,
@@ -139,7 +135,6 @@ footer {
 .footer-margin {
   padding: 5px;
   background-color:rgba(128, 128, 128, 0.5);
-
 }
 
 #social-links {

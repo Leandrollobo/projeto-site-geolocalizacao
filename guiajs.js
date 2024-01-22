@@ -28,7 +28,7 @@ function renderizarListaRecursos() {
       <div class="flex-item">
       <img src="./assets/website.png" class="listicons" />
       de Qualquer Lugar: listas online em todos os seus dispositivos,
-      tenha suas compras sempre à mão.
+      tenha suas compras sempre à mão..
       </div>
       <div class="flex-item">
       <img src="./assets/paper-bag.png" class="listicons" />
