@@ -1,95 +1,143 @@
-@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri&family=Maven+Pro&family=Roboto&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri&family=Maven+Pro&family=Roboto&display=swap');
 
-header {
-  font-family: "Roboto", sans-serif;
-  font-size: 25px;
-  background-color: #333;
-  color: white;
-  padding: 10px;
-  text-align: center;
+/*Resetamos as configurações  iniciais dos novegadores*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+.back {
+/*border: 3px solid green;*/
+    background-image: linear-gradient(-45deg, #173F73, #153259, #152840, #0D0D0D);
+    background-attachment: fixed;
 }
 
+header {
+    /*border: 3px solid pink;*/
+     margin-top: 10px;
+     margin-left: 100px;
+     margin-right: 100px;
+    }
+
+h1 {
+        font-size: 46px;
+        color: #ffffff;
+      }
+
 nav {
-  background-color: #333;
-  color: white;
-  padding: 10px;
-  text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
 }
 
 nav ul li {
-  list-style: none;
+    list-style: none;
 }
 
 form {
-  background-color: #333;
-  color: white;
-  padding: 10px;
-  text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
 }
+
 
 form label,
 form input,
 form textarea,
 form button {
-  display: block;
-  margin: 10px auto;
+    display: block;
+    margin: 10px auto; 
 }
+
 
 form button {
-  background-color: #555;
-  color: white;
-  padding: 8px 16px;
-  border: none;
-  cursor: pointer;
+    background-color: #555;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
 }
+
 
 form button:hover {
-  background-color: #777;
+    background-color: #777;
 }
 
+
 footer {
-  background-color: #333;
-  color: white;
-  padding: 10px;
-  text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
 }
 
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-image: url("./imgpg5/image0_0.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: rgba(255, 255, 255, 0.3);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
-nav a,
-footer a {
-  color: white;
-  text-decoration: none;
-  margin: 0 10px;
+
+nav a, footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
 }
 
-nav a:hover,
-footer a:hover {
-  text-decoration: underline;
+
+
+h2{
+    color: white;
+    padding: 40px;
+
+    font-size: 30px;
+    text-align: center;
 }
 
-.comentarios {
-  max-width: 600px;
-  margin: 20px auto;
-  padding: 10px;
-  background-color: white;
-  border-radius: 5px;
+section {
+    display: flex;
+    flex-wrap: wrap;  /* Adicione esta linha para quebrar as caixas para a próxima linha */
+    justify-content: space-between; /* Opcional: Distribui as caixas uniformemente na linha */
+}
+
+div {
+    max-width: 600px;
+    margin: auto;
+    padding: 10px;
+    background-color: white;
+    border-radius: 20px;
+    height: 200px;
+    width: 300px;
+
 }
 
 .comentario {
-  margin-bottom: 20px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #ddd;
+    flex: 0 0 calc(30% - 20px); /* Define a largura máxima para 30%, com uma margem à direita de 20px */
+    margin-bottom: 20px;
+    padding: 10px; /* Adiciona padding ao invés de padding-bottom */
+    border-bottom: 1px solid #ddd;
+    box-sizing: border-box; /* Garante que a largura e a altura incluam a borda e o preenchimento */
+
+    display: flex; /* Adiciona display flex para centralizar o conteúdo */
+    flex-direction: column; /* Alinha o conteúdo verticalmente */
+    justify-content: center; /* Centraliza verticalmente o conteúdo */
+    text-align: center; /* Centraliza horizontalmente o texto */
 }
+
+.comentario p {
+    margin: 10px 0; /* Adiciona um pouco de espaço entre os parágrafos */
+}
+
+.comentario p {
+    margin: 10px 0; /* Adiciona um pouco de espaço entre os parágrafos */
+} 
 
 .required-popup::after {
   content: "*Campo obrigatório";
@@ -111,3 +159,4 @@ form input:focus {
 textarea input:focus {
   background-color: #8fa6a1;
 }
+
