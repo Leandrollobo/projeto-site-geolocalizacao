@@ -134,3 +134,29 @@ div {
 .comentario p {
     margin: 10px 0; /* Adiciona um pouco de espaço entre os parágrafos */
 }
+
+.comentario p {
+    margin: 10px 0; /* Adiciona um pouco de espaço entre os parágrafos */
+} 
+
+.required-popup::after {
+  content: "*Campo obrigatório";
+  color: #ffffff;
+  font-size: 0.65rem;
+  padding: 0.2rem 0.3rem;
+  width: 100px;
+  background-color: #202020;
+  border-radius: 20px;
+  margin-left: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+form input:focus {
+  background-color: #8fa6a1;
+}
+
+textarea input:focus {
+  background-color: #8fa6a1;
+}
+
