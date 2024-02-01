@@ -3,16 +3,18 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /*box sizing o tamanho total do elemento é calculado incluindo o preenchimento e a borda, mas excluindo as margens. Isso significa que: o tamanho que for definido para largura e altura do elemento incluirá o preenchimento e a borda, e o conteúdo interno não será dimensionado além desse tamanho.*/
 }
 
 .back {
   /*border: 3px solid green;*/
   background-image: linear-gradient(-45deg, #173F73, #153259, #152840, #0D0D0D);
   background-attachment: fixed;
+  padding-bottom: 20px; /*adiciona um padding na div de background para que o quadro branco fique flutuante sem enconsta na borda da tela*/
 }
 
 /* Remove a linha abaixo de hiperlnks e define a cor padrão para os links*/
-a{
+a {
   text-decoration: none;
   color: #172B4D;
 }
@@ -50,7 +52,6 @@ header {
  margin-top: 10px;
  margin-left: 100px;
  margin-right: 100px;
-
 }
 
 main {
@@ -64,7 +65,8 @@ h1 {
 }
 
 .titulo-principal {
-  padding: 100px;
+  padding: 20px;
+  margin-left: 100px;
   width: 600px;
 }
 
@@ -77,7 +79,6 @@ h1 {
 }
 
 .h2caption {
-  /*border: 1px solid red;*/
   color: #ffffff;
   padding: 100px;
   width: 600px;
@@ -119,8 +120,6 @@ footer {
   margin-right: 100px;
   border-radius: 0px 0px 10px 10px;
   background: #ffffff;
-
-
 }
 
 .footer-menu,
@@ -136,9 +135,23 @@ footer {
 .footer-margin {
   padding: 5px;
   background-color:rgba(128, 128, 128, 0.5);
-
 }
 
+#social-links {
+  display: flex;
+  justify-content: center;
+  padding: 24px 0;
+  font-size: 24px;
+}
+
+#social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  transition: background 0.2s;
+  border-radius: 50%;
+}
 
 /*Paleta Cores para elementos
 /*1-hex { color: #008744; }

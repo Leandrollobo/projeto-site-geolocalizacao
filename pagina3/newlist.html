@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet"/>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Compras na sua Rota - Controle de Listas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--Abaixo inseri link para uso da fonte ROBOTO-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style-listoptions.css"/>
+    <link rel="stylesheet" href="style-map.css"/>
+    <!--LEANDRO-->
+    <script src="/pagina3/map_places.js" async defer></script>
+    <!---Script para botão de centralizar na localização do usuario-->
+    <!---Inicializa a biblioteca Places do google-->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0mfBGvXeOgy3-ykjehV4E0Sygn__RlIc&libraries=places&callback=initMap"></script>
+    <!--/LEANDRO-->
+  </head>
+  <body>
+    <div id="container">
+      <div id="logo">
+        <img src="./assets/logoAmarelo.png" alt="Logomarca do site Compras na Sua Rota com fundo amarelo e letras pretas e um desenho aleatório em circulos."/>
+      </div>
+
+      <div class="relacao-listas">
+
+      <p align="center">AQUI O FORMULARIO PARA CRIAR A LISTA</p>
+
+      </div>
+    </div>
+
+    <!---LEANDRO-->
+    <section>
+      <center>
+      <h3>Google Maps and Places TEST</h3>
+      </center>
+  <!--The div element for the map -->
+      <div id="map">
+  <!-- prettier-ignore -->
+        <script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
+            ({key: "AIzaSyC0mfBGvXeOgy3-ykjehV4E0Sygn__RlIc", v: "beta"});</script>
+
+       </div>
+    </section>
+  <!---LEANDRO-->
+
+
+    <div id="return-menu-listas">
+      <a href="./optionlists.html" target="Menu">
+        <ion-icon name="arrow-undo-circle-outline"></ion-icon>
+      </a>
+    </div>
+  </div>
+      <div id="social-links">
+        <a href="https://github.com/Leandrollobo/projeto-site-geolocalizacao.git" target="_blank">
+          <ion-icon name="logo-github"></ion-icon>
+        </a>
+        <a href="https://pages.prozeducacao.com.br/proz-tecnologia" target="_blank">
+          <img src="./assets/proz.png" alt="5px" width="28px"/>
+        </a>
+        <a href="https://linkedin.com/in/" target="_blank">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a>
+      </div>
+      <footer>
+        <p>Criado pelo Grupo 4 - <a href="https://pages.prozeducacao.com.br/proz-tecnologia">Curso Proz Educação</a>  - Projeto Final</a></p>
+      </footer>
+    </div>
+    <script type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js">
+    </script>
+    <script nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js">
+    </script>
+    <script src="./script.js"></script>
+  </body>
+</html>
