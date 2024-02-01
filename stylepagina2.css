@@ -37,6 +37,8 @@ main {
 
 .cadastro {
   background-color: white;
+  display: flex;
+  justify-content: center;
 }
 
 h1 {
@@ -57,7 +59,7 @@ h1 {
 }
 
 form {
-  width: 100%;
+  width: 50%;
   box-sizing: border-box;
 }
 
@@ -65,6 +67,7 @@ form div {
   display: flex;
   flex-direction: column;
   margin-bottom: 15px;
+  
 }
 
 form label {
