@@ -3,7 +3,7 @@ let map, infoWindow;
 
 async function initMap() {
   // Pino de Localização proximo a dois supermercados para testes
-  const position = { lat: -23.673415, lng: -46.71224 };
+  const position = { lat: -23.6609907249838, lng: -46.707127135618975 };
   // Request needed libraries.
   //@ts-ignore
   const { Map } = await google.maps.importLibrary("maps");
@@ -40,8 +40,8 @@ async function initMap() {
         function (position) {
           // Em caso de sucesso, exibe a localização no mapa
           var userLocation = {
-            lat: position.coords.latitude,
-            lng: position.coords.longitude,
+            lat: -23.6609907249838 /*position.coords.latitude*/,
+            lng: -46.707127135618975 /*position.coords.longitude*/,
           };
 
           infoWindow.setPosition(userLocation);
@@ -76,12 +76,10 @@ async function initMap() {
                 // Cria marcadores para os resultados da pesquisa
                 createMarker(results[i]);
               }
-
-              /*<LEANDRO>
+              //LEANDRO
+              //Aqui chamamos a função para avisar o usuario apos ele clicar no botão da localização
               console.log(results);
-              /*
-              avisarUsuario(results);
-              </LEANDRO>*/
+              avisarUsuarioNote(results);
             }
           }
 
@@ -118,7 +116,7 @@ function handleLocationError(browserHasGeolocation, infoWindow, userLocation) {
   infoWindow.open(map);
 }
 
-/*<LEANDRO>
+//função avisar o usuario
 function avisarUsuario(results) {
   if (minhaLista.length > 0 && results.length > 0) {
     alert("Aproveite para comprar o que precisa, tem supermercados proxímos");
@@ -127,6 +125,37 @@ function avisarUsuario(results) {
     alert("Você esta livre, não precisa comprar nada!");
   }
 }
-</LEANDRO>*/
+
+//LEANDRO
+const ulAviso = document.querySelector(`.container-aviso`);
+const audio = new Audio("./assets/aviso.mp3");
+
+function avisarUsuarioNote(results) {
+  if (minhaLista.length > 0 && results.length > 0) {
+    let novaLi1 = `
+    <h5>Avisos na minha rota:</h5>
+    <h5>Aproveite para realizar compras na sua rota, existem supermercados próxmos.</h5>
+    <li>
+      <h5>Estabelecimento mais próximo:</h5>
+      <h5>${results[4].name}</h5>
+      <h5>Endereço: ${results[4].vicinity}</h5>
+    </li>
+      `;
+    ulAviso.innerHTML = novaLi1;
+
+    audio.play();
+  } else {
+    let novaLi1 = `
+    <h5>Avisos na minha rota:</h5>
+    <h5>Você não possui nenhuma lista cadastrada.</h5>
+      `;
+    ulAviso.innerHTML = novaLi1;
+  }
+}
+
+// Substitua 'caminho/do/som/notificacao.mp3' pelo caminho real do seu arquivo de som
+
+//LEANDRO teste
+
 window.initMap = initMap;
 initMap();
