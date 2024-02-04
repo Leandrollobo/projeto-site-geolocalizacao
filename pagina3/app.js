@@ -1,4 +1,3 @@
-//captura os elementos do DOM (da pagina HTML e armazena em variaveis)
 const button = document.querySelector(`.button-add-lista`);
 const input = document.querySelector(`.input-lista`);
 const ul = document.querySelector(`.lista-de-listas`);
@@ -43,5 +42,4 @@ function deletarItem(index) {
   mostrarLista();
 }
 
-//aguardando o botão ser clicado, ao clicar ele chama(executa) a função: adicionarNovoItem
 button.addEventListener(`click`, adicionarNovoItem);
