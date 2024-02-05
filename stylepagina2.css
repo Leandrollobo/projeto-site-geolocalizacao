@@ -15,6 +15,7 @@ nav {
   border-radius: 10px 10px 0px 0px;
 }
 
+
 .navegacao {
   display: flex;
   list-style: none;
@@ -39,6 +40,12 @@ main {
   background-color: white;
   display: flex;
   justify-content: center;
+}
+
+.caixa-endereco {
+align-items: center;
+font-weight: bold;
+
 }
 
 h1 {
