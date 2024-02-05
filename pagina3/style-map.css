@@ -1,6 +1,9 @@
 #map {
+  border: 10px solid white;
   height: 400px;
-  width: 100%;
+  width: 90%;
+  margin: auto;
+  margin-top: 5px;
 }
 
 .custom-map-control-button {

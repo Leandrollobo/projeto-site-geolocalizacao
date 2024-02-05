@@ -14,12 +14,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style-listoptions.css"/>
     <link rel="stylesheet" href="style-map.css"/>
-    <!--LEANDRO-->
+    <link rel="stylesheet" href="style-lista.css"/>
     <script src="/pagina3/map_places.js" async defer></script>
-    <!---Script para botão de centralizar na localização do usuario-->
-    <!---Inicializa a biblioteca Places do google-->
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0mfBGvXeOgy3-ykjehV4E0Sygn__RlIc&libraries=places&callback=initMap"></script>
-    <!--/LEANDRO-->
+    <script src="app.js" defer></script>
   </head>
   <body>
     <div id="container">
@@ -27,28 +25,38 @@
         <img src="./assets/logoAmarelo.png" alt="Logomarca do site Compras na Sua Rota com fundo amarelo e letras pretas e um desenho aleatório em circulos."/>
       </div>
 
-      <div class="relacao-listas">
 
-      <p align="center">AQUI O FORMULARIO PARA CRIAR A LISTA</p>
+    <div class="atividades">
+      <!--APP-->
+      <div class="container-lista">
+        <input class="input-lista" placeholder="Insira um item da sua lista de supermercado">
+        <center><button class="button-add-lista">Adicionar</button></center>
+        <ul class="lista-de-listas">
+
+        </ul>
+      </div>
+
+      <div>
+      <ul class="container-aviso">
+        <h5>Avisos na minha rota:</h5>
+
+      </ul>
 
       </div>
     </div>
 
-    <!---LEANDRO-->
+    </div>
+
+<!---->
     <section>
-      <center>
-      <h3>Google Maps and Places TEST</h3>
-      </center>
-  <!--The div element for the map -->
       <div id="map">
-  <!-- prettier-ignore -->
+
         <script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
             ({key: "AIzaSyC0mfBGvXeOgy3-ykjehV4E0Sygn__RlIc", v: "beta"});</script>
 
        </div>
     </section>
-  <!---LEANDRO-->
-
+<!---->
 
     <div id="return-menu-listas">
       <a href="./optionlists.html" target="Menu">

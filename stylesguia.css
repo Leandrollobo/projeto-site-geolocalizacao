@@ -1,28 +1,23 @@
-/*Resetamos as configurações  iniciais dos novegadores*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /*box sizing o tamanho total do elemento é calculado incluindo o preenchimento e a borda, mas excluindo as margens. Isso significa que: o tamanho que for definido para largura e altura do elemento incluirá o preenchimento e a borda, e o conteúdo interno não será dimensionado além desse tamanho.*/
 }
 
 .back {
-  /*border: 3px solid green;*/
-  background-image: linear-gradient(-45deg, #173F73, #153259, #152840, #0D0D0D);
+  background-image: linear-gradient(-45deg, #173f73, #153259, #152840, #0d0d0d);
   background-attachment: fixed;
-  padding-bottom: 20px; /*adiciona um padding na div de background para que o quadro branco fique flutuante sem enconsta na borda da tela*/
+  padding-bottom: 20px;
 }
 
-/* Remove a linha abaixo de hiperlnks e define a cor padrão para os links*/
 a {
   text-decoration: none;
-  color: #172B4D;
+  color: #172b4d;
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-family: Charl;
-  /*definindo a fonte padrão para todo texto dentro do body da pagina*/
 }
 
 nav {
@@ -36,22 +31,18 @@ nav {
 }
 
 .navi {
-  /*estilizando os elementos do nav*/
   display: flex;
   list-style: none;
-  /*remove as bolinhas dos marcadores da lista*/
   gap: 30px;
-  /*adiciona espaço entre os elementos*/
   align-items: center;
   font-weight: bold;
-  color: #172B4D;
+  color: #172b4d;
 }
 
 header {
-/*border: 3px solid pink;*/
- margin-top: 10px;
- margin-left: 100px;
- margin-right: 100px;
+  margin-top: 10px;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
 main {
@@ -70,9 +61,7 @@ h1 {
   width: 600px;
 }
 
-
 .img-dinamica {
-  /*border: 3px solid red;*/
   background-image: url(./assets/topland.png);
   background-size: cover;
   height: 600px;
@@ -88,7 +77,7 @@ h1 {
   font-size: 18px;
   background-color: #ffffff;
   text-align: center;
-  color: #172B4D;;
+  color: #172b4d;
 }
 
 .flex-container {
@@ -100,22 +89,20 @@ h1 {
 }
 
 .flex-item {
-  width: calc(50% - 10px); /* 50% de largura para criar 2 colunas e subtrai 10px para o espaçamento entre os itens */
+  width: calc(50% - 10px);
   margin-bottom: 20px;
   box-sizing: border-box;
   font-weight: bold;
-  color: #172B4D;
-  align-items: center ;
+  color: #172b4d;
+  align-items: center;
 }
 
 .listicons {
-  /*define tamanho e alinhamento dos pequenos icones*/
   width: 20px;
   align-items: center;
 }
 
 footer {
-  /*desenha area do footer para se destacar do fundo */
   margin-left: 100px;
   margin-right: 100px;
   border-radius: 0px 0px 10px 10px;
@@ -123,7 +110,7 @@ footer {
 }
 
 .footer-menu,
- ul  {
+ul {
   display: flex;
   justify-content: space-between;
   list-style: none;
@@ -134,7 +121,7 @@ footer {
 
 .footer-margin {
   padding: 5px;
-  background-color:rgba(128, 128, 128, 0.5);
+  background-color: rgba(128, 128, 128, 0.5);
 }
 
 #social-links {
@@ -152,16 +139,3 @@ footer {
   transition: background 0.2s;
   border-radius: 50%;
 }
-
-/*Paleta Cores para elementos
-/*1-hex { color: #008744; }
-/*2-hex { color: #0057E7; }
-/*3-hex { color: #D62D20; }
-/*4-hex { color: #FFA700; }
-/*5-hex { color: #FFFFFF; }
-/*Cores simples não usadas*/
-/*Monograph-Concept-1-hex { color: #0A0B0D; }
-/*Monograph-Concept-2-hex { color: #1C2026; }
-/*Monograph-Concept-3-hex { color: #2E5959; }
-/*Monograph-Concept-4-hex { color: #8FA6A1; }
-/*Monograph-Concept-5-hex { color: #D9CBBA; }
