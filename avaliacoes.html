@@ -4,31 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styleavaliacoes.css">
+    <script src="./scriptavaliacoes.js" defer></script>
 
     <title>Avaliações</title>
 
 </head>
 
-<body>
-
-    <header>
+<body class="back">
+    
+    <header class="back">
+        <img src="./assets/edit_location_alt_svg.svg" 
+        alt="Logo do Site, um pin de localização com um lapis dentro">
         <h1>Avaliações</h1>
     </header>
 
-    <nav>
+    <nav class="back">
         <ul>
             <li>
-                <a href="#">Página Inicial</a>
-                <a href="#">Faça o Seu Cadastro</a>
+                <a href="./guia.html">Página Inicial</a>
+                <a href="./pagina2.html">Faça o Seu Cadastro</a>
                 <a href="#">Como Funciona?</a>
                 <a href="#">Faça o seu Login</a>
             </li>
         </ul>
     </nav>
 
-    <div class="comentarios">
-        <h2>Opiniões dos Usuários</h2>
-    
+    <h2 class="subtitulo">Opiniões dos Usuários</h2>
+
+    <section class="comentarios">          
         <div class="comentario">
             <p><strong>Carlos Oliveira</strong> - Nota: 4</p>
             <p>"O site me ajudou a economizar tempo e dinheiro. Agora consigo planejar minhas compras de forma mais eficiente."</p>
@@ -73,18 +76,14 @@
             <p><strong>Marcos Silva</strong> - Nota: 3</p>
             <p>"Sugiro adicionar uma função de lembrete para as listas de compras. Fora isso, está ótimo!"</p>
         </div>
-    
-        <div class="comentario">
-            <p><strong>Gabriela Lima</strong> - Nota: 5</p>
-            <p>"Meu orçamento agradece! O site me ajudou a controlar melhor os gastos com compras do dia a dia."</p>
-        </div>
-    
-    </div>
+            
+    </section>
   
 
-    <form action="">
-        <label for="nome">Nome:</label>
-        <input type="text" name="nome" id="nome" required>
+    <form class="back" action="">
+        <label for="nomeUsuario">Nome:</label>
+        <input type="text" name="nomeUsuario" id="nomeUsuario" required>
+        <p id="nomeError" class="nome-error">Nome inválido</p>
         
         <label for="estrelas">Nota do Usuário:</label>
         <select name="estrelas" id="estrelas" required>
@@ -102,7 +101,7 @@
         <button type="submit">Enviar Avaliação</button>
     </form>
 
-    <footer>
+    <footer class="back">
         <a href="#">Fale Conosco</a>
         <a href="#">História da Empresa</a>
         <a href="#">Contatos</a>
@@ -110,3 +109,4 @@
 
 </body>
 </html>
+

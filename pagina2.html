@@ -1,95 +1,167 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro Usuário</title>
     <link rel="stylesheet" href="/stylepagina2.css">
+    <script src="pagina2.js" defer></script>
 </head>
+
 <body>
+  <div class="fundo">
     <header>
-     <img src="./imgpg5/img logo compras.jpeg" 
-     width="150px", height="100"/>
-        <nav>
-        <ul>
-          <li> <a href="">Pagina 1</a></li>
-          
-          <li> <a href="">Pagina 2</a></li>
-          <li> <a href="">Pagina 3</a></li>
-          <li> <a href="">Pagina 4</a></li>
-          <li> <a href="">Pagina 5</a></li>
+      <nav>
+        <img src="./assets/logo-transparente.png"
+        width="150px", height="100"/>
+        <ul class="navegacao">
+          <li> <a href="index.html">Inicio</a></li>
+          <li> <a href="pagina2.html">Cadastro</a></li>
+          <li> <a href="pagina3/optionlists.html">Listas</a></li>
+          <li> <a href="guia.html">Recursos</a></li>
+          <li> <a href="avaliacoes.html">Avaliações</a></li>
         </ul>
-      </nav>   
-        </header>
-        <br>
-    <h1>Cadastro:</h1>
-    <br>
-    <form action="">
-      <br>
+      </nav>
+    </header>
+
+    <main>
+      <div class="cadastro">
+       <h1>Cadastro:</h1>
+      </div>
+
+
+    <div class="sessao-1">
+
+      <form action="">
+        <div>
         <label for="nome">Nome:</label>
-        <input type="text"id="nome">
+        <input type="text" id="nome">
+        <p id="nome-helper" class="helper-text"></p>
+        </div>
 
+        <div>
         <label for="email">Email:</label>
-        <input type="email"id="email">
-        
+        <input type="email" id="email">
+        <p id="email-helper" class="helper-text"></p>
+        </div>
 
-        <label for="telefone">Telefone:</label>
-        <input type="tel"id="telefone">
+        <div>
+          <label for="idade">Idade:</label>
+          <input type="text"id="idade">
+          <p id="idade-helper" class="helper-text"></p>
+        </div>
 
+        <div>
+          <label for="username">Username</label>
+          <input type="text" id="username">
+          <p id="username-helper" class="helper-text"></p>
+        </div>
+
+        <div>
         <label for="senha">Senha</label>
-        <input type="password" id="password"> <br>
-        
-        <br>
+        <input type="password" id="senha">
+        <p id="senha-helper" class="helper-text"></p>
+        </div>
 
-        
+        <div>
+        <label for="csenha">Confirmar senha</label>
+        <input type="password" id="csenha">
+        <p id="csenha-helper" class="helper-text"></p>
+        </div>
 
+        <div class="caixa-endereco">
         <p> Endereço: </p>
+        </div>
 
-        <br>
-
+        <div>
         <label for="logradouro">Logradouro:</label>
         <input type="text"id="logradouro">
+        <p id="logradouro-helper" class="helper-text"></p>
+        </div>
 
-        <label for="número">Número:</label>
-        <input type="number"id="number">
+        <div>
+        <label for="numero">Número:</label>
+        <input type="text"id="numero">
+        <p id="numero-helper" class="helper-text"></p>
+        </div>
 
+        <div>
         <label for="complemento">Complemento:</label>
-        <input type="text"id="complemento"> <br>
+        <input type="text"id="complemento">
+        <p id="complemento-helper" class="helper-text"></p>
+        </div>
 
-        <br>
-
+        <div>
         <label for="cep">Cep:</label>
-        <input type="text"id="cep">    
+        <input type="text"id="cep">
+        <p id="cep-helper" class="helper-text"></p>
+        </div>
 
-
-        <label for="bairro">Bairro:</label>
-        <input type="text"id="bairro">
-
+        <div>
         <label for="cidade">Cidade:</label>
         <input type="text"id="cidade">
+        <p id="cidade-helper" class="helper-text"></p>
+        </div>
 
-        
+        <div>
         <label for="estado">Estado:</label>
-        <input type="text"id="Estado"> <br>
-        <br>
+        <input type="text"id="estado">
+        <p id="estado-helper" class="helper-text"></p>
+        </div>
 
+        <div>
         <button type="submit">Enviar</button>
-      
-    </form>
-</br>
+        </div>
+
+      </form>
+    </div>
+  </main>
 
     <footer>
-        <img src="./imgpg5/img logo compras.jpeg" 
-        width="150px", height="100"/>
-          <ul>
-          <li> <a href="">Facebook</a></li> 
+      <div class="footer-margin"></div>
 
-                    
-          <li> <a href="">Instagran</a></li> 
+      <div id="social-links">
+        <a
+          href="https://github.com/Leandrollobo/projeto-site-geolocalizacao.git"
+          target="_blank"
+        >
+          <ion-icon name="logo-github"></ion-icon>
+        </a>
+        <a
+          href="https://pages.prozeducacao.com.br/proz-tecnologia"
+          target="_blank"
+        >
+          <img src="/assets/proz.png" alt="5px" width="28px" />
+        </a>
+        <a href="https://linkedin.com/in/" target="_blank">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a>
+      </div>
 
-          <li> <a href=""></a>Linkdin</li>
-        </ul>
+
+
+        <script
+          type="module"
+          src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+        ></script>
+
+
+
+      <script
+        type="module"
+        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+      ></script>
+<script
+        nomodule
+        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+      ></script>
+
+      <center>
+      <p>Criado pelo Grupo 4 - <a href="https://pages.prozeducacao.com.br/proz-tecnologia">Curso Proz Educação</a> - Projeto Final</a></p>
+      </center>
+
+
       </footer>
-
+  </div>
 </body>
 </html>

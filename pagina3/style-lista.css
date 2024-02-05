@@ -1,0 +1,89 @@
+.container-lista {
+  background-color: #fff740;
+  vertical-align: top;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.input-lista {
+  border: none;
+  border-radius: 5px;
+  width: 300px;
+  height: 40px;
+  padding-left: 10px;
+  margin-bottom: 2px;
+}
+
+.button-add-lista {
+  border: none;
+  border-radius: 5px;
+  height: 40px;
+  background-color: rgb(21, 50, 89);
+  color: #ffffff;
+  font-size: 15px;
+  padding: 0 15px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.button-add-lista:hover {
+  opacity: 0.8;
+}
+
+.button-add-lista:active {
+  opacity: 0.6;
+}
+
+.lista-de-listas {
+  width: 100%;
+  list-style: none;
+  margin-top: 30px;
+}
+
+.lista {
+  background-color: #f2f2f2;
+  box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.2);
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.atividades {
+  display: flex;
+}
+
+.container-aviso {
+  vertical-align: top;
+  background-color: #fff740;
+  border-radius: 10px;
+  padding: 20px;
+  margin-left: 1rem;
+  width: 15rem;
+  height: 13rem;
+}
+
+.img_style_lista {
+  height: 25px;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.lista:hover img {
+  opacity: 1;
+}
+
+.done {
+  background-color: #808080;
+  color: rgb(255, 255, 255);
+  text-decoration: line-through;
+}
+
+h5 {
+  font-size: 10px;
+  padding: 2px;
+}
