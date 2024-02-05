@@ -3,8 +3,7 @@
   margin: 0;
   padding: 0;
 }
-.texto123 nav {
-  /*border: 10px solid red;*/
+nav {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,7 +12,6 @@
   height: 60px;
   border-radius: 10px 10px 0px 0px;
 }
-
 
 .navegacao {
   display: flex;
@@ -42,9 +40,8 @@ main {
 }
 
 .caixa-endereco {
-align-items: center;
-font-weight: bold;
-
+  align-items: center;
+  font-weight: bold;
 }
 
 h1 {
@@ -73,7 +70,6 @@ form div {
   display: flex;
   flex-direction: column;
   margin-bottom: 15px;
-  
 }
 
 form label {
@@ -136,7 +132,6 @@ footer {
   border-radius: 50%;
 }
 
-/*estilização do form*/
 .required-popup::after {
   content: "*Campo obrigatório";
   position: inherit;
