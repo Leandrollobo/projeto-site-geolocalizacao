@@ -15,6 +15,7 @@ nav {
   border-radius: 10px 10px 0px 0px;
 }
 
+
 .navegacao {
   display: flex;
   list-style: none;
@@ -37,6 +38,14 @@ main {
 
 .cadastro {
   background-color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.caixa-endereco {
+align-items: center;
+font-weight: bold;
+
 }
 
 h1 {
@@ -57,7 +66,7 @@ h1 {
 }
 
 form {
-  width: 100%;
+  width: 50%;
   box-sizing: border-box;
 }
 
@@ -65,6 +74,7 @@ form div {
   display: flex;
   flex-direction: column;
   margin-bottom: 15px;
+  
 }
 
 form label {
