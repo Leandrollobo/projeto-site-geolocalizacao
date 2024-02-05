@@ -3,8 +3,7 @@
   margin: 0;
   padding: 0;
 }
-
-nav {
+.texto123 nav {
   /*border: 10px solid red;*/
   display: flex;
   justify-content: center;
