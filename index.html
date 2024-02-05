@@ -1,90 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Links do Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;900&family=Raleway&family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;900&family=Raleway:wght@400;700&family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <!-- Links do arquivo css -->
-    <link rel="stylesheet" href="styles.css">
-    <title>Na Rota</title>
+<link href="https://fonts.googleapis.com/css2?
+family=Poppins:wght@700;900&family=Raleway&family=Roboto:wght@300&display=swap"
+rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?
+family=Poppins:wght@700;900&family=Raleway:wght@400;700&family=Roboto:wght@300&display=swap"
+rel="stylesheet">
+<script src="script.js" defer></script>
+<link rel="stylesheet" href="styles.css">
+<title>Na Rota</title>
 </head>
-    <main>
-    <body>
-      <header>
-        <nav>
-          <div class="imagemmenu">
-          <img src="img/logo-transparente.png"/>
-          </div>
-          <ul class="menunav">
-            <li><a href="pagina2.html">Cadastro</a></li>
-            <li><a href="pagina3/optionlists.html">Listas</a></li>
-            <li><a href="guia.html">Recursos</a></li>
-            <li><a href="avaliacoes.html">Avaliações</a></li>
-          </ul>
-        </nav>
-    </header>
+<main>
+<body>
+<header>
+<nav>
+<div class="imagemmenu">
+<img src="assets/logo-transparente.png"/>
+</div>
+<ul class="menunav">
+<li><a href="pagina2.html">Cadastro</a></li>
+<li><a href="pagina3/optionlists.html">Listas</a></li>
+<li><a href="guia.html">Recursos</a></li>
+<li><a href="avaliacoes.html">Avaliações</a></li>
+</ul>
+</nav>
+</header>
+<div>
+<h1>O site que avisa das suas listas de compras!</h1>
+</div>
+<form class="form" action="">
+<div class="card">
+<label for="email">E-mail:</label>
+<input type="text" id="email" name="email" placeholder="Digite seu email">
+<p id="email-helper" class="helper-text"></p>
+<label for="senha">senha</label>
+<input type="password" id="senha" name="senha" placeholder="Digite sua senha">
+<p id="senha-helper" class="helper-text"></p>
 
-        <form class="form" action="">
-          <div class="card">
-            <label>Email</label>
-            <input type="text" name="email" placeholder="Digite seu email">
-            <label>senha</label>
-            <input type="password" name="senha" placeholder="Digite sua senha">
-            <button type="submit">ACESSAR</button>
-            <!-- div não utilizada -->
-            <!--<div class="submit2"> -->
-            <!--a tag html <button2> não é um elemento HTML-->
-            <!--<button2 type="submit2">INSCREVA-SE</button2></div>-->
-            <!--abaixo correto-->
-            <button type="submit" class="submit2">INSCREVA-SE</button>
-          </div>
-        </form>
+<button type ="submit">ACESSAR</button>
+<div class="submit2">
+<button2 type="submit2">INSCREVA-SE</button2></div>
+</div>
+</form>
+<section class="video">
+<h2>Veja aqui como navegar no nosso site!</h2>
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/qbXY30k509E?si=yQcsx3t9w18P4_G7"
+title="YouTube video player" frameborder="0"
 
-      <section class="video">
-        <h2>Veja aqui como navegar no nosso site!</h2>
-        <iframe
-        width="660"
-        height="415"
-        src="https://www.youtube.com/embed/-9phHct9Yt8?si=K3sHwMOAsvSN9AcF"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media;
-        gyroscope; picture-in-picture; web-share"
-        allowfullscreen
-        ></iframe>
-      </section>
-    </main>
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-
+share"
 
-    <footer>
-      <div class="linhacinza"></div>
-    <div id="social-links">
-      <a href="https://github.com/Leandrollobo/projeto-site-geolocalizacao.git" target="_blank">
-        <ion-icon name="logo-github"></ion-icon>
-      </a>
-      <a href="https://pages.prozeducacao.com.br/proz-tecnologia" target="_blank">
-        <img src="./img/proz.png" alt="10px" width="38px"/>
-      </a>
-      <a href="https://linkedin.com/in/" target="_blank">
-        <ion-icon name="logo-linkedin"></ion-icon>
-      </a>
-    </div>
-      <p>Criado pelo Grupo 4 - <a href="https://pages.prozeducacao.com.br/proz-tecnologia">Curso Proz Educação</a>  - Projeto Final</a></p>
-    </footer>
-
-  <script type="module"
-    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js">
-  </script>
-  <script nomodule
-    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js">
-  </script>
-  <script src="./script.js"></script>
-
+allowfullscreen></iframe>
+></iframe>
+</section>
+</main>
+<footer>
+<div class="linhacinza"></div>
+<div id="social-links">
+<a href="https://github.com/Leandrollobo/projeto-site-geolocalizacao.git" target="_blank">
+<ion-icon name="logo-github"></ion-icon>
+</a>
+<a href="https://pages.prozeducacao.com.br/proz-tecnologia" target="_blank">
+<img src="./imgpg5/proz.png" alt="10px" width="38px"/>
+</a>
+<a href="https://linkedin.com/in/" target="_blank">
+<ion-icon name="logo-linkedin"></ion-icon>
+</a>
+</div>
+<p>Criado pelo Grupo 4 - <a href="https://pages.prozeducacao.com.br/proz-tecnologia">Curso Proz
+Educação</a> - Projeto Final</a></p>
+</footer>
+<script type="module"
+src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js">
+</script>
+<script nomodule
+src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js">
+</script>
+<script src="./script.js"></script>
 
 </body>
 </html>
