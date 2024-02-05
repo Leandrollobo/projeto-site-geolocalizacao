@@ -29,12 +29,9 @@ body {
 .video {
   padding: 50px;
   background-color: white;
-  margin-left: 400px;
+  /*  margin-left: 400px;*/
 }
-.form {
-  width: 400px;
-  margin-left: 400px;
-}
+
 .form {
   width: 400px;
 }
